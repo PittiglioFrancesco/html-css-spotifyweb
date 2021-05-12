@@ -1,0 +1,21 @@
+/* sidebar */
+
+.sidebar{
+    background-color: black;
+    height: 1000px;
+}
+
+.color{
+    background-color: #090B11;
+    height: 100px;
+}
+
+main{
+    background-color: #141921;
+}
+
+#logo{
+    width: 75%;
+    padding: 20px;
+}
+
