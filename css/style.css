@@ -68,3 +68,37 @@ main{
     text-transform: uppercase;
 }
 
+/* recently played */
+
+h2{
+    color: white;
+    padding: 30px 20px;
+}
+
+/* .style-playlist{
+    display: flex;
+} */
+
+.img-container{
+    display: block;
+    margin-left: 20px;
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+}
+
+.playlist-title{
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 200px;
+}
+
+.playlist-info{
+    display: block;
+    color: gray;
+    text-align: center;
+    width: 200px;
+}
