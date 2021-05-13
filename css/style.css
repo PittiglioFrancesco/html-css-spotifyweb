@@ -1,3 +1,18 @@
+/* general */
+
+a{
+    text-decoration: none;
+}
+
+.container-fluid{
+    background-color: #141921;
+}
+
+main{
+    height: calc(100vh - 200px);
+    width: calc((100vw - (100% / 12) * 2));
+}
+
 /* sidebar */
 
 .sidebar{
@@ -5,7 +20,14 @@
     height: 1000px;
 }
 
-.color{
+#logo{
+    width: 75%;
+    padding: 20px;
+}
+
+/* bottone */
+
+.btn-style{
     background-color: #090B11;
     height: 100px;
     display: flex;
@@ -13,24 +35,36 @@
     align-items: center;
 }
 
-main{
-    background-color: #141921;
-}
-
-#logo{
-    width: 75%;
-    padding: 20px;
-}
-
-
-
 .btn a{
     color: white;
-    text-decoration: none;
     padding: 10px 30px;
     background-color: #090B11;
     border: 1px solid white;
     border-radius: 20px;
     align-self: flex-end;
     text-transform: uppercase;
+    margin-right: 10px;
 }
+
+/* nav */
+
+.nav-style{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .nav-style{
+    margin: 20px 0;
+}
+
+.nav-style span{
+    padding: 0 20px;
+}
+
+.nav-style a{
+    color: #76787D;
+    text-transform: uppercase;
+}
+
