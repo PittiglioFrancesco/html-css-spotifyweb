@@ -135,10 +135,21 @@ h2{
 }
 
 .col-sx{
-
+    display: flex;
+    align-items: center;
 }
 
 .img-small{
     height: 50px;
     width: 50px;
+}
+
+a i{
+    color: white;
+    padding: 5px;
+}
+
+.col-sx span{
+    padding-right: 20px;
+    padding-left: 10px;
 }
