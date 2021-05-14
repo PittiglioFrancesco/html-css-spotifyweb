@@ -1,7 +1,15 @@
 /* general */
 
+.distance{
+    margin-top: 100px;
+}
+
 a{
     text-decoration: none;
+}
+
+body{
+    background-color: #141921;
 }
 
 .container-fluid{
@@ -17,7 +25,7 @@ main{
 
 .sidebar{
     background-color: black;
-    height: 1000px;
+    height: calc(100% - 100px);
 }
 
 #logo{
@@ -28,11 +36,13 @@ main{
 /* bottone */
 
 .btn-style{
-    background-color: #090B11;
+    background-color: rgba(9, 11, 17, 0.5);
     height: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    width: 83.5%;
 }
 
 .btn a{
@@ -101,4 +111,34 @@ h2{
     color: gray;
     text-align: center;
     width: 200px;
+}
+
+/* consigli */
+
+.p-descr{
+    padding: 0px 20px 30px;
+}
+
+.last{
+    margin-bottom: 150px;
+}
+
+/* footer */
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background-color: #282828;
+    width: 100%;
+    height: 100px;
+}
+
+.col-sx{
+
+}
+
+.img-small{
+    height: 50px;
+    width: 50px;
 }
