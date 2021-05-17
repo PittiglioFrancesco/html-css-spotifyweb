@@ -17,27 +17,28 @@
 
             <div class="col-xs-2 sidebar">
 
-                <img id="logo" src="img/logo.svg" alt="Logo Spotify">
+                <a href="#"><img id="logo" src="img/logo.svg" alt="Logo Spotify">
+                </a>
 
-                <div class="row row-vert">
+                <div class="row row-vert justify-between">
 
-                    <div class="col-tasti">
+                    <div class="row col-tasti">
 
                         <ul>
 
-                            <li class="home"> <img src="img/home.svg" alt="home"> <span>Home</span></li>
-                            <li class="cerca"><img src="img/search.svg" alt="search"> <span>Cerca</span></li>
-                            <li class="libreria"><img src="img/libreria.svg" alt="libreria"> <span>La tua libreria</span></li>
+                            <a href="#"><li class="home"><img src="img/home.svg" alt="home"><span>Home</span></li></a>
+                            <a href="#"><li class="cerca"><img src="img/search.svg" alt="search"><span>Cerca</span></li></a>
+                            <a href="#"><li class="libreria"><img src="img/libreria.svg" alt="libreria"><span>La tua libreria</span></li></a>
 
                         </ul>
 
                     </div>
 
-                    <div class="col-playlist">
+                    <div class="row col-playlist">
 
                         <h4>PLAYLIST</h4>
 
-                        <ul>
+                        <ul class="list-overflow">
                             <li><a class="first" href="#"><i class="fas fa-plus-square"></i>Nuova playlist</a></li>
                             <li><a href="#">Nome playlist</a></li>
                             <li><a href="#">Nome playlist</a></li>
@@ -50,7 +51,7 @@
 
                     </div>
 
-                    <div class="col-account">
+                    <div class="row col-account">
 
                         <span class="installa">
                             <img src="img/download.svg" alt="download">
@@ -61,10 +62,8 @@
 
                         <span class="account">
                             <img src="img/profile.svg" alt="profile-img">
-                            <span>John Doe</span>
+                            <span class="john">John Doe</span>
                         </span>
-
-
 
                     </div>
 
@@ -72,7 +71,7 @@
 
             </div>
 
-            <div class="col-xs-10">
+            <div class="col-xs-10 options">
 
                 <div class="row">
 
@@ -283,50 +282,63 @@
 
         <div class="row footer">
 
-            <div class="col-sx">
+            <div class="col-xs-3">
 
-                <a href="#"><img class="img-small" src="https://i1.wp.com/i.pinimg.com/originals/1b/d4/e8/1bd4e86547e8ff6ee434f6b5faa5a30c.jpg" alt="Playlist img"></a>
+                <div class="row align-center">
 
-                <span>
-                    Nome playlist
-                    <br>
-                    Nome brano
-                </span>
-                <a href="#">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
-                </a>
-
-            </div>
-            
-            <div class="col-middle">
-
-                    <div class="play-icons">
-
-                        <i class="fas fa-random"></i>
-                        <i class="fas fa-step-backward"></i>
-                        <i class="far fa-play-circle"></i>
-                        <i class="fas fa-step-forward"></i>
-                        <i class="fas fa-redo-alt"></i>
-
-                    </div>
-
-                <div class="bar">
-
-                    <span>1:00</span>
-                    <span class="play-bar"></span>
-                    <span>5:00</span>
-
+                        <a href="#"><img class="img-small" src="https://i1.wp.com/i.pinimg.com/originals/1b/d4/e8/1bd4e86547e8ff6ee434f6b5faa5a30c.jpg" alt="Playlist img"></a>
+        
+                        <span>
+                            Nome playlist
+                            <br>
+                            Nome brano
+                        </span>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-folder"></i>
+                        </a>
+        
                 </div>
 
             </div>
+            
+            <div class="col-xs-6">
 
-            <div class="col-dx">
+                <div class="row row-vert align-center">
 
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-tv"></i>
-                <i class="fas fa-volume-up"></i>
-                <div class="volume-bar"></div>
+                    <div class="play-icons">
+    
+                        <a href="#"><i class="fas fa-random"></i></a>
+                        <a href="#"><i class="fas fa-step-backward"></i></a>
+                        <a class="btn-play" href="#"><i class="far fa-play-circle"></i></a>
+                        <a href="#"><i class="fas fa-step-forward"></i></a>
+                        <a href="#"><i class="fas fa-redo-alt"></i></a>
+    
+                    </div>
+    
+                    <div class="bar">
+    
+                        <span>1:00</span>
+                        <div class="play-bar"></div>
+                        <span>5:00</span>
+    
+                        </div>
+    
+                </div>
+                    
+
+            </div>
+
+            <div class="col-xs-3">
+
+                <div class="row align-center justify-end">
+
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-tv"></i>
+                    <i class="fas fa-volume-up"></i>
+                    <div class="volume-bar"></div>
+        
+                </div>
 
             </div>
 

@@ -26,6 +26,7 @@ main{
 .sidebar{
     background-color: black;
     height: calc(100% - 100px);
+    position: fixed;
 }
 
 #logo{
@@ -41,14 +42,21 @@ main{
     margin: 10px 0;
 } 
 
+.col-tasti ul a{
+    color: white;
+}
+
 .col-tasti ul li{
-    vertical-align: middle;
     padding: 5px 0 5px 20px;
 }
 
-li.home img, li.cerca img, li.libreria img{
+.col-tasti ul li a span{
+    vertical-align: bottom;
+}
+
+a li.home img, a li.cerca img, a li.libreria img{
     width: 10%;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .col-tasti ul li.span{
@@ -60,6 +68,11 @@ li.home img, li.cerca img, li.libreria img{
 h4{
     color: white;
     padding: 0 0 20px 20px;
+}
+
+.list-overflow{
+    overflow-y: hidden;
+    max-width: 200px;
 }
 
 .col-playlist ul{
@@ -84,6 +97,7 @@ span img{
 }
 
 hr{
+    width: 100%;
     margin: 20px;
 }
 
@@ -99,6 +113,10 @@ span span{
 
 .col-account{
     margin-top: 75px;
+}
+
+.john{
+    margin-bottom: 10px;
 }
 
 /* bottone */
@@ -157,10 +175,6 @@ h2{
     padding: 30px 20px;
 }
 
-/* .style-playlist{
-    display: flex;
-} */
-
 .img-container{
     display: block;
     margin-left: 20px;
@@ -204,18 +218,15 @@ h2{
     background-color: #282828;
     width: 100%;
     height: 100px;
+    align-items: center;
+}
+
+.row i{
+    padding: 10px;
+    color: white;
 }
 
 /* col sx */
-
-.row:last-child{
-    justify-content: space-between;
-}
-
-.col-sx{
-    display: flex;
-    align-items: center;
-}
 
 .img-small{
     height: 50px;
@@ -227,46 +238,62 @@ a i{
     padding: 5px;
 }
 
-.col-sx span{
+.row span{
     padding-right: 20px;
     padding-left: 10px;
 }
 
 /* col middle */
 
-
-.col-middle{
-    display: flex;
-    align-items: center;
-}
-
-.col-middle i{
-    color: white;
-    padding: 10px;
+.btn-play{
+    font-size: 30px;
 }
 
 .play-bar{
+    display: inline-block;
     height: 5px;
     width: 300px;
     color: red;
 }
 
-
 /* col dx */
 
-.col-dx{
-    display: flex;
-    align-items: center;
-}
-
-.col-dx i{
-    padding: 10px;
-    color: white;
-}
-
 .volume-bar{
+    display: inline-block;
     height: 5px;
     width: 150px;
     background-color: lightgray;
     border-radius: 3px;
+}
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+    .options{
+        margin-left: 500px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .options{
+        margin-left: 160px;
+    }
+
+    .volume-bar{
+        width: 100px;
+    }
+
+    .row span{
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .options{
+        margin-left: 17%;
+    }
 }
