@@ -14,6 +14,11 @@ body{
 
 .container-fluid{
     background-color: #141921;
+    height: calc(100vh - 100px);
+}
+
+.container-fluid>.row{
+    height: 100%;
 }
 
 main{
@@ -25,8 +30,7 @@ main{
 
 .sidebar{
     background-color: black;
-    height: calc(100% - 100px);
-    position: fixed;
+    overflow-y: auto;
 }
 
 #logo{
@@ -117,6 +121,11 @@ span span{
 
 .john{
     margin-bottom: 10px;
+}
+
+.options{
+    height: 100%;
+    overflow-y: auto;
 }
 
 /* bottone */
@@ -253,7 +262,7 @@ a i{
     display: inline-block;
     height: 5px;
     width: 300px;
-    color: red;
+    background-color: red;
 }
 
 /* col dx */
@@ -268,7 +277,7 @@ a i{
 
 /* media query */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .options{
         margin-left: 500px;
     }
@@ -277,11 +286,9 @@ a i{
 @media screen and (min-width: 769px) and (max-width: 991px) {
     
 }
+ */
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    .options{
-        margin-left: 160px;
-    }
+ @media screen and (min-width: 992px) and (max-width: 1199px) {
 
     .volume-bar{
         width: 100px;
@@ -290,10 +297,18 @@ a i{
     .row span{
         padding-right: 10px;
     }
-}
 
-@media screen and (min-width: 1200px) {
-    .options{
-        margin-left: 17%;
+    .img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .playlist-title{
+        width: 150px;
+    }
+
+    .playlist-info{
+        width: 150px;
     }
 }
+
