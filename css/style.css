@@ -1,5 +1,9 @@
 /* general */
 
+a:hover{
+    text-decoration: underline;
+}
+
 .distance{
     margin-top: 100px;
 }
@@ -218,6 +222,10 @@ h2{
     margin-bottom: 150px;
 }
 
+.artist .img{
+    border-radius: 50%;
+}
+
 /* footer */
 
 .footer{
@@ -262,7 +270,8 @@ a i{
     display: inline-block;
     height: 5px;
     width: 300px;
-    background-color: red;
+    background-color: lightgray;
+    border-radius: 3px;
 }
 
 /* col dx */
@@ -277,16 +286,22 @@ a i{
 
 /* media query */
 
-/* @media screen and (max-width: 768px) {
-    .options{
-        margin-left: 500px;
+@media screen and (max-width: 768px) {
+    .col-tasti ul a li span{
+        display: none;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
-    
+    .small{
+        font-size: 10px;
+    }  
+
+    .play-bar{
+        width: 140px;
+    }
 }
- */
+
 
  @media screen and (min-width: 992px) and (max-width: 1199px) {
 
